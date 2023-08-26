@@ -1,24 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { Routes, Route } from 'react-router-dom';
+import PropertyList from './components/properties/propertyList.js';
+import ProperyDetails from './components/properties/properyDetails.js';
+import Header from './common/header.js';
+import Banner from './components/Banner/Banner.jsx';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Header />
+      <Banner />
+      <Routes>
+        <Route path='' element={<PropertyList />} />
+        <Route path='property-details/:PropertyID' element={<ProperyDetails />} />
+      </Routes>
+    </>
   );
 }
 
