@@ -6,7 +6,6 @@ import PropertyList from './components/properties/propertyList.jsx';
 import ProperyDetails from './components/properties/properyDetails.jsx';
 import Header from './common/header.js';
 import Banner from './components/Banner/Banner.jsx'; import Favourite from './components/properties/favourite.jsx';
-
 function App() {
   const [properties, setProperties] = useState([
     {
@@ -239,21 +238,9 @@ function App() {
     }
   ]);
   
-  function likedProperty(propID){
-   console.log("sdf",propID)
-   properties.forEach((singleProp, index)=>{
-    if(singleProp.id==propID){
-      console.log('single',singleProp,index)
-      
-      properties[index].isliked = true;
-      setProperties([...properties])
-    }
-   })
-  }
-
   return (
     <>
-      <PropertyContext.Provider value={{ "propertyList": properties, likedProperty }}>
+      <PropertyContext.Provider value={{ "propertyList": properties }}>
         <Header />
         <Banner />
         <Routes>
@@ -265,5 +252,4 @@ function App() {
     </>
   );
 }
-
 export default App;

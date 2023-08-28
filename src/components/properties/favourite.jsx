@@ -8,19 +8,15 @@ export default function Favourite() {
     if (arr != null) {
         newarr = arr.split(",");
     }
-
     let selectedProperty = [];
     console.log(newarr)
-    // console.log(arr.split(","))
     const { propertyList } = useContext(PropertyContext);
-    // console.log(propertyList)
     propertyList.forEach((singleProperty) => {
         if (newarr.indexOf(singleProperty.id.toString()) != -1) {
             console.log(singleProperty)
             selectedProperty.push(singleProperty)
         }
     });
-
     var newproperty = selectedProperty.map((sproperty) => {
         return<div className='col-md-4' key={sproperty.id}>
         <div className="card m-2">

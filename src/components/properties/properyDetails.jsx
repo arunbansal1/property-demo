@@ -1,14 +1,11 @@
 import { useParams } from 'react-router-dom';
 import { useState, useEffect, useContext } from 'react';
 import { PropertyContext } from '../../context/propertyContext'
-// import PropertyList from './propertyList';
 export default function ProperyView() {
   let params = useParams();
   let [property, updateProperty] = useState({});
   const { propertyList } = useContext(PropertyContext);
-  // console.log(params.PropertyID)
   let result = true;
-  // let property ="";
   useEffect(() => {
     propertyList.forEach((singleProperty) => {
       if (params.PropertyID == singleProperty.id) {
@@ -16,7 +13,6 @@ export default function ProperyView() {
       }
     });
   }, [])
-  // console.log(property)
   return (
     <div className='text-center  mt-5 container'>
       <h5 className='text-danger'>Details Of Property</h5>
@@ -49,7 +45,6 @@ export default function ProperyView() {
           </tbody>
         </table>
       </div>
-
     </div>
   )
 }
