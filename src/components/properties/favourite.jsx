@@ -2,14 +2,13 @@ import { useParams } from 'react-router-dom';
 import { useContext } from 'react';
 import { PropertyContext } from '../../context/propertyContext';
 export default function Favourite() {
-    let arr = localStorage.getItem("properties")
-    console.log("properties");
+  let arr = localStorage.getItem('properties')
     let newarr = [];
     if (arr != null) {
         newarr = arr.split(",");
     }
     let selectedProperty = [];
-    console.log(newarr)
+    console.log(newarr) 
     const { propertyList } = useContext(PropertyContext);
     propertyList.forEach((singleProperty) => {
         if (newarr.indexOf(singleProperty.id.toString()) != -1) {
