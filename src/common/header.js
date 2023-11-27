@@ -1,4 +1,4 @@
-import AppLogo from '../logo.png';
+import AppLogo from './logo.png';
 import './header.css'
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
