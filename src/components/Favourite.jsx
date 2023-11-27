@@ -4,12 +4,12 @@ import { useParams } from 'react-router-dom';
 import PropertyCart from './PropertyCart';
 import Header from './Header';
 import React from 'react';
-import useHook from './customeHook/UseHook';
+// import useHook from './customeHook/UseHook';
 import { Context } from './ContextApi';
 
 export default function Favourite() {
     const { properties,favProperty }  = useContext(Context)
-    const [counter, clickButton]  = useHook(0)
+    // const [counter, clickButton]  = useHook(0)
     let property = [];
     properties.forEach((singleProperty)=>{
         let prodID = singleProperty.id.toString();
@@ -22,7 +22,7 @@ export default function Favourite() {
     })
     return (
         <div className='extend-margin'>
-        <button onClick={clickButton}>Counter {counter}</button>
+        {/* <button onClick={clickButton}>Counter {counter}</button> */}
         <div className='container px-0'>
             <div className='row'>
                 {likeProperties}    
