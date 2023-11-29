@@ -19,7 +19,6 @@ export default function Property() {
     return <div>
         <div className='banner'>
             <div className="App">
-          
                 <Typewriter
                     onInit={(typewriter) => {
                         typewriter
@@ -34,12 +33,10 @@ export default function Property() {
                     }}
                 />
             </div>
-            {/* <div className='banner-overlay'></div> */}
         </div>
-        <section className="container my-5 p-0">
+        <section className="container mt-lg-3">
             <div className='mb-3'>
                 <h3 className='d-inline'>Popular Property</h3>
-                {/* <Link className='float-end px-4 btn text-white py-2' style={{backgroundColor:'#005555'}} to='all-properties'>View all</Link> */}
             </div>
             <div className='row'>
                 {featuredProperties}

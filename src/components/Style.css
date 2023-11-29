@@ -15,30 +15,6 @@
         height: 100%;
         justify-content: center;
 }
-.extend-margin{
-    margin-top:100px;
-}
-.navbar-bg{
-    background-color:#005555;
-}
-.navbar-index{
-    z-index:2;
-}
-ul li .link{
-    color:white;
-}
-.nav-item{
-    position: relative;
-}
-.navbar-nav li .link:hover::after {
-     content:"";
-     width:30%;
-     height: 2px;
-     background:#000;
-     position:absolute;
-     bottom:2px;
-     left:10px;
-}
 .navbar .animated{
     animation: up-down 2s ease-in-out infinite alternate-reverse both;
 }

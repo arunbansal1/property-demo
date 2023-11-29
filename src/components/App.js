@@ -1,5 +1,5 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
-// import 'bootstrap/dist/js/bootstrap';
+import 'bootstrap/dist/js/bootstrap';
 import 'animate.css';
 import { Routes, Route, BrowserRouter } from 'react-router-dom';
 import Property from './Property';
