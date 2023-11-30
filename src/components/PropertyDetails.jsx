@@ -34,10 +34,10 @@ export default function PropertyDetails() {
             hideContact()
         }
     },[])
-    const singlePropertyHTML = <div className='mt-4 container'>
-        <h3 className='text-warning text-opacity-50'>Check My Property</h3>
+    const singlePropertyHTML = <div className='container'>
+        <h3 className='text-warning text-opacity-50 mb-5'>Check My Property</h3>
         <div className='row'>
-            <div className='col-sm-12 col-lg-4 col-md-4 me-4 px-0'>
+            <div className='col-sm-12 col-lg-4 col-md-4 me-4'>
                 <Swiper 
                     slidesPerView={1}
                     autoplay={{ delay: 5000 }}

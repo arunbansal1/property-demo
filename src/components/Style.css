@@ -15,8 +15,23 @@
         height: 100%;
         justify-content: center;
 }
+.extend-margin{
+    margin-top:80px;
+}
 .navbar .animated{
     animation: up-down 2s ease-in-out infinite alternate-reverse both;
+}
+.copyright{
+    padding: 10px 0;
+    color: white;
+    background-color: #2a465b;
+}
+footer {
+    margin-top: 20px;
+    background: #f4f4f4;
+}
+footer li{
+    padding: 3px 0;
 }
 @-webkit-keyframes up-down {
     0% {
@@ -26,7 +41,6 @@
         transform:translateY(-5px);
     }
 }
-
 @keyframes up-down {
     0%{
         transform:translateY(5px);

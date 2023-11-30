@@ -35,7 +35,7 @@ export default function Property() {
             </div>
         </div>
         <section className="container mt-lg-3">
-            <div className='mb-3'>
+            <div className='mb-3 mt-4'>
                 <h3 className='d-inline'>Popular Property</h3>
             </div>
             <div className='row'>
