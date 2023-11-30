@@ -36,9 +36,9 @@ export default function Header(props) {
             </form>}
             <div className="collapse navbar-collapse me-5" id="navbarNav">
                     <ul className="ms-lg-auto navbar-nav text-sm-center">
-                        {showContact && <li className="nav-item text-primary">
+                        {/* {showContact && <li className="nav-item text-primary">
                             <Link className="nav-link link" aria-current="page" to="#">Contact</Link>
-                        </li>}
+                        </li>} */}
                         <li className="nav-item text-primary">
                             <Link className="nav-link link" aria-current="page" to="/">Home</Link>
                         </li>

@@ -38,28 +38,28 @@ export default function PropertyDetails() {
         <h3 className='text-warning text-opacity-50 mb-5'>Check My Property</h3>
         <div className='row'>
             <div className='col-sm-12 col-lg-4 col-md-4 me-4'>
-                <Swiper 
+                <Swiper
                     slidesPerView={1}
                     autoplay={{ delay: 5000 }}
-                    pagination   
+                    pagination 
                 >
                     <SwiperSlide>
                         <img src={"https://themewagon.github.io/property/images/img_1.jpg"} />
                     </SwiperSlide>
                     <SwiperSlide>
-                        <img src='/images/home-1.jpeg' style={{ height: 500, width:'100%' }} />
+                        <img src={"https://themewagon.github.io/property/images/img_1.jpg"} />
                     </SwiperSlide>
                     <SwiperSlide>
-                        <img src='/images/home-2.jpeg' style={{ height: 500, width: '100%' }} />
+                        <img src={"https://themewagon.github.io/property/images/img_1.jpg"}/>
                     </SwiperSlide>
                     <SwiperSlide>
-                        <img src='/images/home-3.jpeg' style={{ height: 500, width: '100%' }} />
+                        <img src={"https://themewagon.github.io/property/images/img_1.jpg"} />
                     </SwiperSlide>
                     <SwiperSlide>
-                        <img src='/images/home-4.jpeg' style={{ height: 500, width: '100%' }} />
+                        <img src={"https://themewagon.github.io/property/images/img_1.jpg"} />
                     </SwiperSlide>
                     <SwiperSlide>
-                        <img src='/images/home-5.jpeg' style={{ height: 500, width: '100%' }} />
+                        <img src={"https://themewagon.github.io/property/images/img_1.jpg"} />
                     </SwiperSlide>
                 </Swiper>
             </div>

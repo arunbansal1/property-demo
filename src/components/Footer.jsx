@@ -1,8 +1,8 @@
 export default function Footer(){
     return <footer>
-    <div class="container py-4">
-      <div class="row">
-        <div class="col-lg-3 col-sm-6 mb-4">
+    <div className="container py-4">
+      <div className="row">
+        <div className="col-lg-3 col-sm-6 mb-4">
           <h4>Quick Links</h4>
           <ul>
             <li>
@@ -13,7 +13,7 @@ export default function Footer(){
             </li>
           </ul>
         </div>
-        <div class="col-lg-3 col-sm-6 mb-4">
+        <div className="col-lg-3 col-sm-6 mb-4">
           <h4>Programs</h4>
           <ul>
             <li>
@@ -24,7 +24,7 @@ export default function Footer(){
             </li>
           </ul>
         </div>
-        <div class="col-lg-3 col-sm-6 mb-4">
+        <div className="col-lg-3 col-sm-6 mb-4">
           <h4>Resourses</h4>
           <ul>
             <li>
@@ -33,17 +33,17 @@ export default function Footer(){
             <li>
               Submit Ticket
             </li>
-          </ul>
+          </ul>cl
         </div>
-        <div class="col-lg-3 col-sm-6 mb-4">
+        <div className="col-lg-3 col-sm-6 mb-4">
           <h4>Quick Support</h4>
           <ul>
             <li>
-              <i class="fas fa-envelope"></i>
+              <i className="fas fa-envelope"></i>
               <a href="mailTo:Support@exampleCompany.com">Support@example.com</a>
             </li>
             <li>
-              <i class="fas fa-phone-alt"></i>
+              <i className="fas fa-phone-alt"></i>
               <a href="tel:+917837291830">+91 7837291830</a>
             </li>
           </ul>
@@ -51,7 +51,7 @@ export default function Footer(){
       </div>
 
     </div>
-    <div class="copyright text-center">
+    <div className="copyright text-center">
       Copyright © 2023. Example company private limited
     </div>
   </footer>
