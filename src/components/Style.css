@@ -33,6 +33,15 @@ footer {
 footer li{
     padding: 3px 0;
 }
+.no-favourite{
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: justify;
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 @-webkit-keyframes up-down {
     0% {
         transform:translateY(5x);
