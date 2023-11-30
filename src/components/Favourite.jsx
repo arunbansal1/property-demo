@@ -23,7 +23,7 @@ export default function Favourite() {
     return (
         <div className='extend-margin'>
         {/* <button onClick={clickButton}>Counter {counter}</button> */}
-        <div className='container px-0'>
+        <div className='container'>
             <div className='row'>
                 {likeProperties}    
             </div>

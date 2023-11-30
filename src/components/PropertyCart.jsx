@@ -69,7 +69,7 @@ export default function PropertyCart(props) {
         setLike(havePropertyInLocalStorage);
 
     }, [favProperty]) 
-    return <div className='col-sm-4 col-md-6 col-lg-6 col-xl-4'>
+    return <div className='col-sm-6 col-md-6 col-lg-6 col-xl-4'>
         <div className="card my-3 ">
             <img src={"https://themewagon.github.io/property/images/img_1.jpg"} style={{ height: '260px' }} className="card-img-top" alt="image not found" />
             <div className="card-body">

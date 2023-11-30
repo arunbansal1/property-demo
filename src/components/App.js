@@ -1,5 +1,5 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
-// import 'bootstrap/dist/js/bootstrap';
+import 'bootstrap/dist/js/bootstrap';
 import 'animate.css';
 import { Routes, Route, BrowserRouter } from 'react-router-dom';
 import Property from './Property';
@@ -12,6 +12,7 @@ import { Provider } from './ContextApi';
 import axios from 'axios';
 import useLocal from './customeHook/useLocal';
 import Header from './Header';
+import Footer from './Footer';
 import Rentz from './Rentz';
 
 function App() {
@@ -56,8 +57,9 @@ function App() {
             <Route path='all-properties' element={<AllProperty />} />
             <Route path='property-detail/:propertyId' element={<PropertyDetails />} />
             <Route path='favourite' element={<Favourite />} />
-            <Route path='rentz' element={<Rentz/>} />
+            {/* <Route path='rentz' element={<Rentz/>} /> */}
           </Routes>
+          <Footer />
         </BrowserRouter>
       </Provider>
     </div>

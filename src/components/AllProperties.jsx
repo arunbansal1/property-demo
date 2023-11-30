@@ -406,10 +406,10 @@ export default function AllProperty() {
         </div>
         <div className='container'>
             <div className='row'>
-                <div className='col-md-2 col-lg-2 col-sm-4 mt-3 ps-0'>
+                <div className='col-md-2 col-lg-2 col-sm-4 mt-lg-2 mt-md-2 mt-5'>
                     <div className='fw-bold'>
                         <form>
-                            <h4>Bathroom</h4>
+                            <h5>Bathroom</h5>
                             {
                                 bathrooms.map((item, index) => {
                                     return <div key={item.value}>
@@ -418,7 +418,7 @@ export default function AllProperty() {
                                     </div>
                                 })
                             }
-                            <h4>Bedroom</h4>
+                            <h5 className='mt-3'>Bedroom</h5>
                             {
                                 beds.map((item) => {
                                     return <div key={item.value}>
@@ -427,9 +427,9 @@ export default function AllProperty() {
                                     </div>
                                 })
                             }
-                            <h4><label htmlFor='agent'>Select Agent</label></h4>
+                            <h5 className='mt-3'><label htmlFor='agent'>Select Agent</label></h5>
                             {
-                                <select id='agent' className='rounded px-4' onChange={onChangeAgent}>
+                                <select id='agent' className='form-control' onChange={onChangeAgent}>
                                     <option>Select Agent</option>
                                     {
                                         agents.map((item, i) => {
@@ -438,9 +438,9 @@ export default function AllProperty() {
                                     }
                                 </select>
                             }
-                            <h4><label htmlFor='propTitles'>PropTitles</label></h4>
+                            <h5 className='mt-3'><label htmlFor='propTitles'>PropTitles</label></h5>
                             {
-                                <select id='propTitles' className='rounded text-center' onChange={onChangePropTitles}>
+                                <select id='propTitles' className='form-control' onChange={onChangePropTitles}>
                                     <option>Select PropTitle</option>
                                     {
                                         propTitles.map((item) => {
@@ -449,9 +449,9 @@ export default function AllProperty() {
                                     }
                                 </select>
                             }
-                            <h4><label htmlFor='cities'>Cities</label></h4>
+                            <h5 className='mt-3'><label htmlFor='cities'>Cities</label></h5>
                             {
-                                <select id='cities' className='rounded px-4' onChange={onChangeCities}>
+                                <select id='cities' className='form-control' onChange={onChangeCities}>
                                     <option>Select City</option>
                                     {
                                         cities.map((item) => {
@@ -460,9 +460,9 @@ export default function AllProperty() {
                                     }
                                 </select>
                             }
-                            <h4><label htmlFor='state'>State</label></h4>
+                            <h5 className='mt-3'><label htmlFor='state'>State</label></h5>
                             {
-                                <select id='state' className='rounded px-4' onChange={onChangeState}>
+                                <select id='state' className='form-control' onChange={onChangeState}>
                                     <option>Select State</option>
                                     {
                                         states.map((item) => {
@@ -471,9 +471,9 @@ export default function AllProperty() {
                                     }
                                 </select>
                             }
-                            <h4><label htmlFor='sizes'>Size</label></h4>
+                            <h5 className='mt-3'><label htmlFor='sizes'>Size</label></h5>
                             {
-                                <select id='sizes' className='rounded px-4' onChange={onChangeSize}>
+                                <select id='sizes' className='form-control' onChange={onChangeSize}>
                                     <option>Select Size</option>
                                     {
                                         sizes.map((item) => {
@@ -485,9 +485,9 @@ export default function AllProperty() {
                         </form>
                     </div>
                 </div>
-                <div className='col-md-10 col-lg-10 col-sm-8 pe-0'>
+                <div className='col-md-10 col-lg-10 col-sm-8'>
                     <div className='row'>
-                        {isloading || propertyList.length > 0 ? propertyList :"There is no property agains your filters" }
+                        {isloading || propertyList.length > 0 ? propertyList :<h5 className='text-danger'>'There is no property agains your filters'</h5>}
                     </div>
                 </div>
             </div>

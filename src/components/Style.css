@@ -16,31 +16,22 @@
         justify-content: center;
 }
 .extend-margin{
-    margin-top:100px;
-}
-.navbar-bg{
-    background-color:#005555;
-}
-.navbar-index{
-    z-index:2;
-}
-ul li .link{
-    color:white;
-}
-.nav-item{
-    position: relative;
-}
-.navbar-nav li .link:hover::after {
-     content:"";
-     width:30%;
-     height: 2px;
-     background:#000;
-     position:absolute;
-     bottom:2px;
-     left:10px;
+    margin-top:80px;
 }
 .navbar .animated{
     animation: up-down 2s ease-in-out infinite alternate-reverse both;
+}
+.copyright{
+    padding: 10px 0;
+    color: white;
+    background-color: #2a465b;
+}
+footer {
+    margin-top: 20px;
+    background: #f4f4f4;
+}
+footer li{
+    padding: 3px 0;
 }
 @-webkit-keyframes up-down {
     0% {
@@ -50,7 +41,6 @@ ul li .link{
         transform:translateY(-5px);
     }
 }
-
 @keyframes up-down {
     0%{
         transform:translateY(5px);
