@@ -25,14 +25,16 @@ export default function Favourite() {
     return (
         <div className='extend-margin'>
             {
-                noProperyContent && <div className='no-favourite'>
+                noProperyContent && <div className='container-fluid'>
+                    <div className='no-favourite'>
                     <div className='text-center'>
                                 <img src="images/broken-heart.png" />
                             </div>
                         <h3 className='mt-3'>
                             You have not selected any property as favourite, please goto the <Link to="/all-properties">property page</Link> and click on heart icon to save it into favourite list.
                         </h3>
-                    </div>    
+                    </div>        
+                </div>
             }
         {/* <button onClick={clickButton}>Counter {counter}</button> */}
         <div className='container'>
